@@ -1,0 +1,23 @@
+// Vendor
+@import 'jeet/index';
+@import 'lib';
+@import 'regions';
+
+body {
+  font-family: 'Roboto Slab', serif;
+  
+  padding: 0 1rem;
+  @include breakpoint(sm) {
+      max-width: 75%;
+      position: relative;
+      margin: 0 auto;
+  }
+}
+
+.content {
+  padding-top: 2rem;
+}
+
+p {
+  line-height: 1.5;
+}
