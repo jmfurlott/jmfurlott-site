@@ -1,0 +1,19 @@
+{
+  "name": "jmfurlott",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jmfurlott/jmfurlott-site",
+  "authors": [
+    "Joseph Furlott <jmfurlott@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ionicons": "~2.0.0"
+  }
+}
