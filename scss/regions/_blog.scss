@@ -1,0 +1,22 @@
+.blog-single {
+
+    padding-bottom: 2rem;
+    @include cf();
+
+    &__header {
+        @include breakpoint(sm) {
+            @include col(1/3);
+        }
+    }
+    &__excerpt {
+        @include breakpoint(sm) {
+            @include col(2/3);
+        }
+
+        &__read-more {
+            padding-top: 1rem;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+        }
+    }
+}
