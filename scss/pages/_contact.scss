@@ -1,0 +1,22 @@
+.contact {
+    .content {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    
+        &__social {
+            ul {
+                list-style-type: none;
+                padding: 0;
+                li {
+                    font-size: 2rem;
+                    display: inline;
+                }
+
+                li + li {
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
+}

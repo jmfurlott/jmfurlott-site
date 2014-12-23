@@ -1,12 +1,14 @@
-// Vendor
 @import 'jeet/index';
 @import 'lib';
 @import 'regions';
+@import 'pages';
 
 body {
+    
   font-family: 'Roboto Slab', serif;
   
-  padding: 0 1rem;
+  margin: 0 1rem;
+  padding-top: $header-height;
   @include breakpoint(sm) {
       max-width: 75%;
       position: relative;
@@ -20,4 +22,25 @@ body {
 
 p {
   line-height: 1.5;
+}
+
+.link {
+    color: black;
+    text-decoration: none;
+
+    &.twitter {
+        color: $twitter;
+    }
+
+    &.github {
+        color: $github;
+    }
+
+    &.linkedin {
+        color: $linkedin;
+    }
+
+    &.facebook {
+        color: $facebook;
+    }
 }

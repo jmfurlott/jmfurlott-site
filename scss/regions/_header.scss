@@ -1,49 +1,75 @@
-$header-height: 3rem;
+$header-height: 5rem;
 
 .header {
-    padding-top: 2rem;
-    width: 100%;
     height: $header-height;
-    a {
-	text-decoration: none;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 200;
-        letter-spacing: 1px;
-        font-size: 1.5rem;
-        color: black;
-        &:hover, &:visited, &:focused {
-          color: black;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    line-height: $header-height;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+
+    &__contents {
+        @include breakpoint(sm) {
+            max-width: 75%;
+            position: relative;
+            margin: 0 auto;
+            height: $header-height;
         }
     }
 
     &__logo {
-	@include col(1/3); //TODO: split into two columns etc
-	line-height: $header-height;
+        float: left;
+        font-size: 1.25rem; 
+        a {
+            text-decoration: none;
+            color: $text-color;
+        }
+        padding-left: 1rem;
+        @include breakpoint(sm) {
+            padding-left: 0;
+        }
     }
 
+    &__hamburger {
+        float: right;
+        padding-right: 1rem;
+        font-size: 2rem;
+        a {
+            color: $text-color;
+        }
+        
+        @include breakpoint(sm) {
+            display: none;
+        }
+    }
+    
     &__menu {
-	@include col(2/3);
-	&__list {
-	    list-style-type: none;
-	    margin: 0;
-	    padding: 0;
-	    text-align: right;
-	    li {
-		line-height: $header-height;
-		display: inline;
-                a {
-		  color: #666;
-                  &:hover, &:visited, &:focused {
-                      color: #666;
-                   }
-                }
-	    }
+        display: none;
+        @include breakpoint(sm) {
+            display: block;
+        }
 
-	    li + li {
-		margin-left: 1rem;
-	    }
-	}
+        float: right;
+        
+        font-size: 1.25rem;
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            li { 
+                line-height: $header-height;
+                display: inline;
+                a {
+                    text-decoration: none;
+                    color: $text-color;
+                }
+            }
+            
+            li + li {
+                margin-left: 1.5rem;
+            }
+        }
     }
 }
-
-
