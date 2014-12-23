@@ -1,26 +1,40 @@
 <html>
+  
   <head>
     <title>Joseph Furlott - Web Developer</title>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="bower_components/ionicons/css/ionicons.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
   </head>
-
   <body class="contact">
     <div class="header">
-      <div class="header__logo"><a href="index.html">Joseph Furlott</a></div>
-      <div class="header__menu">
-	<ul class="header__menu__list">
-	  <li><a href="about.html">about</a></li>
-	  <!-- <li><a href="work.html">Work</a></li>-->
-	  <li><a href="blogs.html">blog</a></li>
-	  <li><a href="contact.html">contact</a></li>
-	</ul>
+      <div class="header__contents">
+        <div class="header__logo"><a href="index.html">Joseph Furlott</a></div>
+        <div class="header__hamburger"><a href="#"><i class="icon ion-navicon-round"></i></a></div>
+        <div class="header__menu">
+          <ul class="header__menu__list">
+            <li><a href="about.html">about</a></li>
+            <!-- <li><a href="work.html">Work</a></li>-->
+            <li><a href="blogs.html">blog</a></li>
+            <li><a href="contact.html">contact</a></li>
+          </ul>
+        </div>
       </div>
+
+        <div class="dropdown">
+          <ul>
+            <li><a href="about.html">about</a></li>
+            <!-- <li><a href="work.html">Work</a></li>-->
+            <li><a href="blogs.html">blog</a></li>
+            <li><a href="contact.html">contact</a></li>
+          </ul>
+        </div>
+
     </div> 
-   
+
 
 
     <div class="content">
@@ -38,6 +52,9 @@
       </div>
 
     </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/header.js"></script>
+ 
   </body>
 
 </html>

@@ -1,11 +1,16 @@
+{% block header %}
+
+<!DOCTYPE html>
+
 <html>
-   <head>
+  <head>
     <title>Joseph Furlott - Web Developer</title>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="bower_components/ionicons/css/ionicons.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/vendor/nunjucks.min.js"></script>
+
 
   </head>
   <body>
@@ -22,45 +27,5 @@
           </ul>
         </div>
       </div>
-
-        <div class="dropdown">
-          <ul>
-            <li><a href="about.html">about</a></li>
-            <!-- <li><a href="work.html">Work</a></li>-->
-            <li><a href="blogs.html">blog</a></li>
-            <li><a href="contact.html">contact</a></li>
-          </ul>
-        </div>
-
     </div> 
-
-
-
-
-
-    <div class="content">
-
-      Hello my name is Joseph Furlott.  
-      <br>
-      Here are some things that I do:
-        - web development
-        - wordpress
-
-      <br>
-      Here are a couple projects I have worked on:
-      Scality, Fossil MORE
-      <br>
-      
-      Here's how you can get in touch with me
-        -twitter
-        -email
-        -linkedin
-      <br>
-      Or visit the contact page
-    </div>
-     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="js/header.js"></script>
- 
-  </body>
-
-</html>
+{% endblock %}
