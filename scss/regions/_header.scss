@@ -32,7 +32,7 @@ $header-height: 5rem;
         }
     }
 
-    &__hamburger {
+    &__hamburger, &__close {
         float: right;
         padding-right: 1rem;
         font-size: 2rem;
@@ -44,6 +44,31 @@ $header-height: 5rem;
             display: none;
         }
 
+    }
+
+    &__hamburger {
+        opacity: 1;
+        &.open {
+            display: none;
+            opacity: 0;
+            transition: opacity 10000ms linear;
+        }
+    }
+
+    &__close {
+        display: none;
+        opacity: 0;
+        &.open {
+            i {
+                color: $red; 
+            }
+            display: block;
+            opacity: 1;
+            transition: opacity 150ms linear;
+            @include breakpoint(sm) {
+                display: none;
+            }
+        }
     }
     
     &__menu {
